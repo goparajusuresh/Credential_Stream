@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Regression]]">
+  <listeners>
+    <listener class-name="utility.WebDriverListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)(failed)">
+    <classes>
+      <class name="testSuite.Bolt">
+        <methods>
+          <include name="Bolt_SG_03"/>
+          <include name="Bolt_SG_02"/>
+          <include name="Bolt_SG_01"/>
+          <include name="beforeClassRun"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="afterClassRun"/>
+          <include name="beforeTest"/>
+          <include name="getResult"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- testSuite.Bolt -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Regression]] -->
