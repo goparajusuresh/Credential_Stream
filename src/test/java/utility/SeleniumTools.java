@@ -1103,6 +1103,7 @@ public class SeleniumTools extends TestInit {
 			hoverAction.clickAndHold(hoverElement).perform();
 			hoverAction.release(hoverElement);
 			pNode.info(value + "Mouse hover to the element");
+			loggerUtil.LogMessage(LogLevel.INFO, "clickOnObject At : ", value);
 			// Perform mouse
 			// hover action
 			// using

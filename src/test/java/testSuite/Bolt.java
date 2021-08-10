@@ -75,9 +75,9 @@ public class Bolt extends TestInit {
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -176,7 +176,7 @@ public class Bolt extends TestInit {
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.switchToFrame("id", "mainFrame");
 			// ************************ Navigate to provider***************************
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Search']/ancestor::li//span[text()='Provider']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
 			// Enter Value in search box
@@ -189,9 +189,9 @@ public class Bolt extends TestInit {
 
 			SeleniumTools.switchToFrame("id", "mainFrame");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -213,7 +213,7 @@ public class Bolt extends TestInit {
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.switchToFrame("id", "mainFrame");
 			// ************** Navigate to provider and search **************
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Search']/ancestor::li//span[text()='Provider']");
 			CoreUtil.imSleepy(5000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
@@ -228,9 +228,9 @@ public class Bolt extends TestInit {
 			assertNotEquals(Actual, Expected);
 			SeleniumTools.switchToFrame("id", "mainFrame");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -258,9 +258,9 @@ public class Bolt extends TestInit {
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -349,9 +349,9 @@ public class Bolt extends TestInit {
 			}
 
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -513,9 +513,9 @@ public class Bolt extends TestInit {
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.switchToFrame("id", "mainFrame");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -581,7 +581,7 @@ public class Bolt extends TestInit {
 			// *** Navigate to provide to check count **********
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Search']/ancestor::li//span[text()='Provider']");
 			CoreUtil.imSleepy(5000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
@@ -610,9 +610,9 @@ public class Bolt extends TestInit {
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.switchToFrame("id", "mainFrame");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -633,7 +633,7 @@ public class Bolt extends TestInit {
 			// *** Navigate to Suresh Goparaju provide **********
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Search']/ancestor::li//span[text()='Provider']");
 			CoreUtil.imSleepy(5000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
@@ -660,7 +660,7 @@ public class Bolt extends TestInit {
 			// *** Navigate to Suresh G provide **********
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Search']/ancestor::li//span[text()='Provider']");
 			CoreUtil.imSleepy(5000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
@@ -732,7 +732,7 @@ public class Bolt extends TestInit {
 			Login.CheckMode("Verity QA Team1", "global");
 
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Reports']");
 			CoreUtil.imSleepy(10000);
@@ -786,7 +786,7 @@ public class Bolt extends TestInit {
 			Login.CheckMode("Facility2", "facility");
 
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Reports
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Reports']");
 			CoreUtil.imSleepy(5000);
@@ -852,9 +852,9 @@ public class Bolt extends TestInit {
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -972,9 +972,9 @@ public class Bolt extends TestInit {
 			// Validating Facility1 should be display, Facility2 should not be display
 			RTFReader.RTF("note.doc", "Suresh");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -1034,9 +1034,9 @@ public class Bolt extends TestInit {
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -1323,9 +1323,9 @@ public class Bolt extends TestInit {
 			RTFReader.RTF("note.doc", "05/24/2021");
 
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -1385,9 +1385,9 @@ public class Bolt extends TestInit {
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -1513,9 +1513,9 @@ public class Bolt extends TestInit {
 			ExcelReader.readAllExcelFiles(fileName, "Goparaju");
 
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -1635,7 +1635,7 @@ public class Bolt extends TestInit {
 					SeleniumTools.readConfigFile(Constants.properties_stage).getProperty("Stage_G_Password"));
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Search']/ancestor::li//span[text()='Provider']");
 			CoreUtil.imSleepy(5000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
@@ -1685,9 +1685,9 @@ public class Bolt extends TestInit {
 			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
 
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -1771,7 +1771,7 @@ public class Bolt extends TestInit {
 
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Search']/ancestor::li//span[text()='Provider']");
 			CoreUtil.imSleepy(5000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
@@ -1801,7 +1801,7 @@ public class Bolt extends TestInit {
 			// ******** Preconditons ******** adding education record for both providers
 			// ********
 			// Navigate provider
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Search']/ancestor::li//span[text()='Provider']");
 			CoreUtil.imSleepy(5000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
@@ -1905,9 +1905,9 @@ public class Bolt extends TestInit {
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -1982,7 +1982,7 @@ public class Bolt extends TestInit {
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
 			// Navigate provider
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Search']/ancestor::li//span[text()='Provider']");
 
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
@@ -2029,9 +2029,9 @@ public class Bolt extends TestInit {
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
 			// Navigating to Bolt->others
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -2111,7 +2111,7 @@ public class Bolt extends TestInit {
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
 			// Navigate to provider ####1
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Search']/ancestor::li//span[text()='Provider']");
 			CoreUtil.imSleepy(5000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
@@ -2134,7 +2134,7 @@ public class Bolt extends TestInit {
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
 			// Navigate provider
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Search']/ancestor::li//span[text()='Provider']");
 			CoreUtil.imSleepy(5000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
@@ -2171,9 +2171,9 @@ public class Bolt extends TestInit {
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
 			// Navigating to Bolt->others
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -2263,7 +2263,7 @@ public class Bolt extends TestInit {
 			Login.CheckMode("Verity QA Team1", "global");
 
 			// Clicking on search
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			// Clicking on Provider
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Provider']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
@@ -2326,9 +2326,9 @@ public class Bolt extends TestInit {
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -2415,9 +2415,9 @@ public class Bolt extends TestInit {
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Editor']");
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Editor']");
 			CoreUtil.imSleepy(20000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
@@ -2495,7 +2495,7 @@ public class Bolt extends TestInit {
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Reports']");
 			CoreUtil.imSleepy(10000);
@@ -2575,7 +2575,7 @@ public class Bolt extends TestInit {
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Editor
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Reports']");
 			CoreUtil.imSleepy(10000);
@@ -2700,7 +2700,7 @@ public class Bolt extends TestInit {
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Reports
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Reports']");
 			CoreUtil.imSleepy(15000);
@@ -2751,7 +2751,7 @@ public class Bolt extends TestInit {
 
 			SeleniumTools.switchToFrame("xpath", "//iframe[@id='mainFrame']");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Reports
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Reports']");
 			CoreUtil.imSleepy(15000);
@@ -2773,7 +2773,7 @@ public class Bolt extends TestInit {
 					SeleniumTools.readConfigFile(Constants.properties_stage).getProperty("Stage_G_Password"));
 			Login.CheckMode("Verity QA Team1", "global");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Reports
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Reports']");
 			CoreUtil.imSleepy(15000);
@@ -2821,7 +2821,7 @@ public class Bolt extends TestInit {
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Reports
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Reports']");
 			CoreUtil.imSleepy(10000);
@@ -2875,7 +2875,7 @@ public class Bolt extends TestInit {
 
 			SeleniumTools.switchToFrame("xpath", "//iframe[@id='mainFrame']");
 			// Clicking on Bolt
-			SeleniumTools.hoverElement("xpath", "//ul[@id='horizontal-menu']/li//span[text()='Bolt']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
 			// Clicking on Reports
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Reports']");
 			CoreUtil.imSleepy(20000);

@@ -68,7 +68,7 @@ public class Verity extends TestInit {
 			Login.CheckMode("Verity QA Team1", "global");
 
 			// Clicking on search
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			// Clicking on Provider
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Provider']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
@@ -182,7 +182,7 @@ public class Verity extends TestInit {
 					SeleniumTools.readConfigFile(Constants.properties_stage).getProperty("Forgot_PasswordStage"));
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
-			SeleniumTools.hoverElement("xpath", "//span[text()='Set up']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Set up']");
 			SeleniumTools.hoverElement("xpath", "//span[text()='System']");
 			SeleniumTools.hoverElement("xpath", "//span[text()='User/Group']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='User/Group Maintenance']");
@@ -236,7 +236,7 @@ public class Verity extends TestInit {
 			// Clicking on reset link
 			SeleniumTools.clickOnObject("xpath",
 					"//a[contains(@href, 'https://client.verity.cloud/QA/')]");
-			CoreUtil.imSleepy(5000);
+			CoreUtil.imSleepy(10000);
 			SeleniumTools.switchToChildWindow();
 			// ****************** To Reset your password *************
 			// Clicking on Enter Account
@@ -321,7 +321,7 @@ public class Verity extends TestInit {
 					SeleniumTools.readConfigFile(Constants.properties_stage).getProperty("Stage_G_Password"));
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
-			SeleniumTools.hoverElement("xpath", "//span[text()='Set up']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Set up']");
 			SeleniumTools.hoverElement("xpath", "//span[text()='System']");
 			SeleniumTools.hoverElement("xpath", "//span[text()='User/Group']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='User/Group Maintenance']");
@@ -364,7 +364,7 @@ public class Verity extends TestInit {
 					SeleniumTools.readConfigFile(Constants.properties_stage).getProperty("Stage_G_Password"));
 			CoreUtil.imSleepy(40000);
 			SeleniumTools.switchToFrame("id", "mainFrame");
-			SeleniumTools.hoverElement("xpath", "//span[text()='Set up']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Set up']");
 			SeleniumTools.hoverElement("xpath", "//span[text()='System']");
 			SeleniumTools.hoverElement("xpath", "//span[text()='User/Group']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='User/Group Maintenance']");
@@ -404,7 +404,7 @@ public class Verity extends TestInit {
 			Login.CheckMode("Verity QA Team1", "global");
 			// ****Clicking on Search
 			// Clicking on search
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			// Clicking on Provider
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Provider']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
@@ -485,7 +485,7 @@ public class Verity extends TestInit {
 			CoreUtil.imSleepy(5000);
 			SeleniumTools.switchToFrame("id", "mainFrame");
 			// Navigate to setup->user/group maintenance
-			SeleniumTools.hoverElement("xpath", "//span[text()='Set up']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Set up']");
 			SeleniumTools.hoverElement("xpath", "//span[text()='System']");
 			SeleniumTools.hoverElement("xpath", "//span[text()='User/Group']");
 			SeleniumTools.clickOnObject("xpath", "//span[text()='User/Group Maintenance']");
@@ -659,7 +659,7 @@ public class Verity extends TestInit {
 			SeleniumTools.clickOnObject("xpath", "//img[@ng-click='nav.knowledgeNow ? return : nav.showHome()']");
 			// ****************** 1) No error should display Without modify and save **********************
 			//Click on setup
-			SeleniumTools.hoverElement("xpath", "//span[text()='Set up']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Set up']");
 			SeleniumTools.hoverElement("xpath", "//span[text()='System']");
 			
 			// Configuration
@@ -677,7 +677,7 @@ public class Verity extends TestInit {
 			
 			// ****************** 2) No error should display After modify and save **********************
 			// Click on setup
-			SeleniumTools.hoverElement("xpath", "//span[text()='Set up']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Set up']");
 			SeleniumTools.hoverElement("xpath", "//span[text()='System']");
 
 			// Configuration
@@ -692,8 +692,8 @@ public class Verity extends TestInit {
 			SeleniumTools.ClearAndSetText("xpath", "//label[text()='Group Spaces in Listings']/following-sibling::echo-input/div/span[1]/span/input[1]", SeleniumTools.getRandomNumbers());
 
 			//Edit Customer id 
-			SeleniumTools.clickOnObject("xpath", "//label[text()='Customer ID']/following-sibling::echo-input/div/input");
-			SeleniumTools.ClearAndSetText("xpath", "//label[text()='Customer ID']/following-sibling::echo-input/div/input", SeleniumTools.getRandomNumbers());
+			// SeleniumTools.clickOnObject("xpath", "//label[text()='Customer ID']/following-sibling::echo-input/div/input");
+			// SeleniumTools.ClearAndSetText("xpath", "//label[text()='Customer ID']/following-sibling::echo-input/div/input", SeleniumTools.getRandomNumbers());
 			
 			// SAVE
 			SeleniumTools.clickOnObject("xpath", "//span[text()=' Save ']");
@@ -717,7 +717,7 @@ public class Verity extends TestInit {
 					SeleniumTools.readConfigFile(Constants.properties_stage).getProperty("Stage_G_Password"));
 			Login.CheckMode("Verity QA Team1", "global");
 			// Click on setup
-			SeleniumTools.hoverElement("xpath", "//span[text()='Set up']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Set up']");
 			SeleniumTools.hoverElement("xpath", "//span[text()='System']");
 			
 			// Configuration
@@ -744,7 +744,7 @@ public class Verity extends TestInit {
 			SeleniumTools.switchToFrame("xpath", "//iframe[@id='mainFrame']");
 			
 			// Clicking on search
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			// Clicking on Provider
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Provider']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
@@ -807,7 +807,7 @@ public class Verity extends TestInit {
 					SeleniumTools.readConfigFile(Constants.properties_stage).getProperty("Stage_G_Password"));
 			Login.CheckMode("Verity QA Team1", "global");
 			// Clicking on search
-			SeleniumTools.hoverElement("xpath", "//i[@title='Search']/following-sibling::span[text()='Search']");
+			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
 			// Clicking on Provider
 			SeleniumTools.clickOnObject("xpath", "//span[text()='Provider']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");

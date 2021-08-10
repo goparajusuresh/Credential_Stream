@@ -6,10 +6,8 @@
 	</listeners>
 	<test name="Test">
 		<classes>
-			<class name="testSuite.Verity">
-				<methods>
-					<include name="Verity_SG_01" />
-				</methods>
+			<class name="testSuite.Verity"/>
+				<class name="testSuite.Bolt">
 			</class>
 		</classes>
 	</test> <!-- Test -->
