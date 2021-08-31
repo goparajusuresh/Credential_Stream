@@ -1,497 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="1" total="10" passed="6">
+<testng-results skipped="0" failed="0" ignored="17" total="20" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression" duration-ms="2214882" started-at="2021-08-09T18:17:11 IST" finished-at="2021-08-09T18:54:06 IST">
+  <suite name="Regression" duration-ms="1197469" started-at="2021-08-27T14:55:44 IST" finished-at="2021-08-27T15:15:42 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="2214882" started-at="2021-08-09T18:17:11 IST" finished-at="2021-08-09T18:54:06 IST">
-      <class name="testSuite.Verity">
-        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:testSuite.Verity@67080771]" name="beforeSuite" is-config="true" duration-ms="1993" started-at="2021-08-09T18:17:09 IST" finished-at="2021-08-09T18:17:11 IST">
+    <test name="Test" duration-ms="1197469" started-at="2021-08-27T14:55:44 IST" finished-at="2021-08-27T15:15:42 IST">
+      <class name="testSuite.Bolt">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="beforeSuite" is-config="true" duration-ms="216" started-at="2021-08-27T14:55:44 IST" finished-at="2021-08-27T14:55:44 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@197d6cc9]]>
+                <![CDATA[org.testng.TestRunner@445f6f73]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testSuite.Verity@67080771]" name="beforeTest" is-config="true" duration-ms="0" started-at="2021-08-09T18:17:11 IST" finished-at="2021-08-09T18:17:11 IST">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="beforeTest" is-config="true" duration-ms="1" started-at="2021-08-27T14:55:44 IST" finished-at="2021-08-27T14:55:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClassRun()[pri:0, instance:testSuite.Verity@67080771]" name="beforeClassRun" is-config="true" duration-ms="1" started-at="2021-08-09T18:17:11 IST" finished-at="2021-08-09T18:17:11 IST">
+        <test-method status="PASS" signature="beforeClassRun()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="beforeClassRun" is-config="true" duration-ms="0" started-at="2021-08-27T14:55:44 IST" finished-at="2021-08-27T14:55:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassRun -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testSuite.Verity@67080771]" name="beforeMethod" is-config="true" duration-ms="883" started-at="2021-08-09T18:17:11 IST" finished-at="2021-08-09T18:17:12 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="beforeMethod" is-config="true" duration-ms="24" started-at="2021-08-27T14:55:44 IST" finished-at="2021-08-27T14:55:45 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testSuite.Verity.Verity_SG_01()]]>
+                <![CDATA[public static void testSuite.Bolt.Bolt_SG_02()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Verity_SG_01()[pri:0, instance:testSuite.Verity@67080771]" name="Verity_SG_01" duration-ms="287800" started-at="2021-08-09T18:17:12 IST" description="Provider - Add, Provider - Demographics - Modify, Provider - Demographics - Country - Add, Provider - Delete" finished-at="2021-08-09T18:22:00 IST">
+        <test-method status="PASS" signature="Bolt_SG_02()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="Bolt_SG_02" duration-ms="300948" started-at="2021-08-27T14:55:45 IST" description="Bolt - Go to Editor - Spreadsheet - Create then Upload Template File - Print" finished-at="2021-08-27T15:00:45 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verity_SG_01 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="getResult" is-config="true" duration-ms="4179" started-at="2021-08-09T18:22:00 IST" finished-at="2021-08-09T18:22:04 IST">
+        </test-method> <!-- Bolt_SG_02 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="getResult" is-config="true" duration-ms="1319" started-at="2021-08-27T15:00:45 IST" finished-at="2021-08-27T15:00:47 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verity_SG_01 status=SUCCESS method=Verity.Verity_SG_01()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
+                <![CDATA[[TestResult name=Bolt_SG_02 status=SUCCESS method=Bolt.Bolt_SG_02()[pri:0, instance:testSuite.Bolt@2bfc268b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="afterMethod" is-config="true" duration-ms="1518" started-at="2021-08-09T18:22:04 IST" finished-at="2021-08-09T18:22:06 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="afterMethod" is-config="true" duration-ms="774" started-at="2021-08-27T15:00:47 IST" finished-at="2021-08-27T15:00:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verity_SG_01 status=SUCCESS method=Verity.Verity_SG_01()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
+                <![CDATA[[TestResult name=Bolt_SG_02 status=SUCCESS method=Bolt.Bolt_SG_02()[pri:0, instance:testSuite.Bolt@2bfc268b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testSuite.Verity@67080771]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-09T18:22:06 IST" finished-at="2021-08-09T18:22:06 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-27T15:00:48 IST" finished-at="2021-08-27T15:00:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testSuite.Verity.Verity_SG_02()]]>
+                <![CDATA[public static void testSuite.Bolt.Bolt_SG_03()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="Verity_SG_02()[pri:0, instance:testSuite.Verity@67080771]" name="Verity_SG_02" duration-ms="177612" started-at="2021-08-09T18:22:06 IST" description="Forgot Password" finished-at="2021-08-09T18:25:03 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.fail(Assert.java:106)
-at testSuite.Verity.Verity_SG_02(Verity.java:275)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="Bolt_SG_03()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="Bolt_SG_03" duration-ms="590471" started-at="2021-08-27T15:00:48 IST" description="Bolt - Workflow - Batch Add - Many Records" finished-at="2021-08-27T15:10:38 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verity_SG_02 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="getResult" is-config="true" duration-ms="4" started-at="2021-08-09T18:25:03 IST" finished-at="2021-08-09T18:25:03 IST">
+        </test-method> <!-- Bolt_SG_03 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="getResult" is-config="true" duration-ms="1923" started-at="2021-08-27T15:10:38 IST" finished-at="2021-08-27T15:10:40 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verity_SG_02 status=FAILURE method=Verity.Verity_SG_02()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
+                <![CDATA[[TestResult name=Bolt_SG_03 status=SUCCESS method=Bolt.Bolt_SG_03()[pri:0, instance:testSuite.Bolt@2bfc268b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="afterMethod" is-config="true" duration-ms="574" started-at="2021-08-09T18:25:03 IST" finished-at="2021-08-09T18:25:04 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="afterMethod" is-config="true" duration-ms="150" started-at="2021-08-27T15:10:40 IST" finished-at="2021-08-27T15:10:40 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verity_SG_02 status=FAILURE method=Verity.Verity_SG_02()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
+                <![CDATA[[TestResult name=Bolt_SG_03 status=SUCCESS method=Bolt.Bolt_SG_03()[pri:0, instance:testSuite.Bolt@2bfc268b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testSuite.Verity@67080771]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-09T18:25:04 IST" finished-at="2021-08-09T18:25:04 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-27T15:10:40 IST" finished-at="2021-08-27T15:10:40 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public static void testSuite.Verity.Verity_SG_03()]]>
+                <![CDATA[public static void testSuite.Bolt.Bolt_SG_04()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Verity_SG_03()[pri:0, instance:testSuite.Verity@67080771]" name="Verity_SG_03" duration-ms="132461" started-at="2021-08-09T18:25:04 IST" description="Change from Global to Facility specific login" finished-at="2021-08-09T18:27:16 IST">
+        <test-method status="PASS" signature="Bolt_SG_04()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="Bolt_SG_04" duration-ms="300543" started-at="2021-08-27T15:10:40 IST" description="Bolt Report - Query/Export of Facility data - My Reports - Print Bolt Report - ensure Notifications maintain Facility specificity" finished-at="2021-08-27T15:15:41 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verity_SG_03 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="getResult" is-config="true" duration-ms="3056" started-at="2021-08-09T18:27:16 IST" finished-at="2021-08-09T18:27:19 IST">
+        </test-method> <!-- Bolt_SG_04 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="getResult" is-config="true" duration-ms="1155" started-at="2021-08-27T15:15:41 IST" finished-at="2021-08-27T15:15:42 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verity_SG_03 status=SUCCESS method=Verity.Verity_SG_03()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
+                <![CDATA[[TestResult name=Bolt_SG_04 status=SUCCESS method=Bolt.Bolt_SG_04()[pri:0, instance:testSuite.Bolt@2bfc268b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="afterMethod" is-config="true" duration-ms="252" started-at="2021-08-09T18:27:19 IST" finished-at="2021-08-09T18:27:20 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="afterMethod" is-config="true" duration-ms="113" started-at="2021-08-27T15:15:42 IST" finished-at="2021-08-27T15:15:42 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verity_SG_03 status=SUCCESS method=Verity.Verity_SG_03()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
+                <![CDATA[[TestResult name=Bolt_SG_04 status=SUCCESS method=Bolt.Bolt_SG_04()[pri:0, instance:testSuite.Bolt@2bfc268b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="Verity_SG_04()[pri:0, instance:testSuite.Verity@67080771]" name="Verity_SG_04" duration-ms="303329" started-at="2021-08-09T18:27:20 IST" description="Account Management - Create a new user then login as that user " finished-at="2021-08-09T18:32:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verity_SG_04 -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testSuite.Verity@67080771]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-09T18:27:20 IST" finished-at="2021-08-09T18:27:20 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public static void testSuite.Verity.Verity_SG_04()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="getResult" is-config="true" duration-ms="2257" started-at="2021-08-09T18:32:23 IST" finished-at="2021-08-09T18:32:25 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verity_SG_04 status=SUCCESS method=Verity.Verity_SG_04()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="afterMethod" is-config="true" duration-ms="185" started-at="2021-08-09T18:32:25 IST" finished-at="2021-08-09T18:32:25 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verity_SG_04 status=SUCCESS method=Verity.Verity_SG_04()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testSuite.Verity@67080771]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-09T18:32:25 IST" finished-at="2021-08-09T18:32:25 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public static void testSuite.Verity.Verity_SG_05()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Verity_SG_05()[pri:0, instance:testSuite.Verity@67080771]" name="Verity_SG_05" duration-ms="202281" started-at="2021-08-09T18:32:25 IST" description="Verity - Provider - Credentials/Licenses - VerifyNow!" finished-at="2021-08-09T18:35:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verity_SG_05 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="getResult" is-config="true" duration-ms="2200" started-at="2021-08-09T18:35:48 IST" finished-at="2021-08-09T18:35:50 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verity_SG_05 status=SUCCESS method=Verity.Verity_SG_05()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="afterMethod" is-config="true" duration-ms="283" started-at="2021-08-09T18:35:50 IST" finished-at="2021-08-09T18:35:50 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verity_SG_05 status=SUCCESS method=Verity.Verity_SG_05()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testSuite.Verity@67080771]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-09T18:35:50 IST" finished-at="2021-08-09T18:35:50 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public static void testSuite.Verity.Verity_SG_06()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Verity_SG_06()[pri:0, instance:testSuite.Verity@67080771]" name="Verity_SG_06" duration-ms="356221" started-at="2021-08-09T18:35:50 IST" description="Facility - Add" finished-at="2021-08-09T18:41:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verity_SG_06 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="getResult" is-config="true" duration-ms="1632" started-at="2021-08-09T18:41:46 IST" finished-at="2021-08-09T18:41:48 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verity_SG_06 status=SUCCESS method=Verity.Verity_SG_06()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="afterMethod" is-config="true" duration-ms="238" started-at="2021-08-09T18:41:48 IST" finished-at="2021-08-09T18:41:48 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verity_SG_06 status=SUCCESS method=Verity.Verity_SG_06()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testSuite.Verity@67080771]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-09T18:41:48 IST" finished-at="2021-08-09T18:41:48 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public static void testSuite.Verity.Verity_SG_07()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Verity_SG_07()[pri:0, instance:testSuite.Verity@67080771]" name="Verity_SG_07" duration-ms="233628" started-at="2021-08-09T18:41:48 IST" description="Facility - Change Facility - Save" finished-at="2021-08-09T18:45:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verity_SG_07 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="getResult" is-config="true" duration-ms="1565" started-at="2021-08-09T18:45:42 IST" finished-at="2021-08-09T18:45:44 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verity_SG_07 status=SUCCESS method=Verity.Verity_SG_07()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="afterMethod" is-config="true" duration-ms="181" started-at="2021-08-09T18:45:44 IST" finished-at="2021-08-09T18:45:44 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verity_SG_07 status=SUCCESS method=Verity.Verity_SG_07()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testSuite.Verity@67080771]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-09T18:45:44 IST" finished-at="2021-08-09T18:45:44 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public static void testSuite.Verity.Verity_SG_08()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="Verity_SG_08()[pri:0, instance:testSuite.Verity@67080771]" name="Verity_SG_08" duration-ms="106990" started-at="2021-08-09T18:45:44 IST" description="Set Up - System - Configuration - System Parameters - SaveSet Up - System - Configuration - System Parameters - Modify " finished-at="2021-08-09T18:47:31 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.fail(Assert.java:106)
-at testSuite.Verity.Verity_SG_08(Verity.java:707)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verity_SG_08 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="getResult" is-config="true" duration-ms="5" started-at="2021-08-09T18:47:31 IST" finished-at="2021-08-09T18:47:31 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verity_SG_08 status=FAILURE method=Verity.Verity_SG_08()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="afterMethod" is-config="true" duration-ms="262" started-at="2021-08-09T18:47:31 IST" finished-at="2021-08-09T18:47:31 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verity_SG_08 status=FAILURE method=Verity.Verity_SG_08()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testSuite.Verity@67080771]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-09T18:47:31 IST" finished-at="2021-08-09T18:47:31 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public static void testSuite.Verity.Verity_SG_09()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="Verity_SG_09()[pri:0, instance:testSuite.Verity@67080771]" name="Verity_SG_09" duration-ms="394834" started-at="2021-08-09T18:47:31 IST" description="Verity / Provider / National Student Clearinghouse Query" finished-at="2021-08-09T18:54:06 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.fail(Assert.java:106)
-at testSuite.Verity.Verity_SG_09(Verity.java:796)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verity_SG_09 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="getResult" is-config="true" duration-ms="1" started-at="2021-08-09T18:54:06 IST" finished-at="2021-08-09T18:54:06 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verity_SG_09 status=FAILURE method=Verity.Verity_SG_09()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.Verity@67080771]" name="afterMethod" is-config="true" duration-ms="229" started-at="2021-08-09T18:54:06 IST" finished-at="2021-08-09T18:54:06 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verity_SG_09 status=FAILURE method=Verity.Verity_SG_09()[pri:0, instance:testSuite.Verity@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClassRun()[pri:0, instance:testSuite.Verity@67080771]" name="afterClassRun" is-config="true" duration-ms="0" started-at="2021-08-09T18:54:06 IST" finished-at="2021-08-09T18:54:06 IST">
+        <test-method status="PASS" signature="afterClassRun()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="afterClassRun" is-config="true" duration-ms="0" started-at="2021-08-27T15:15:42 IST" finished-at="2021-08-27T15:15:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClassRun -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testSuite.Verity@67080771]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-08-09T18:54:06 IST" finished-at="2021-08-09T18:54:06 IST">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-08-27T15:15:42 IST" finished-at="2021-08-27T15:15:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testSuite.Verity@67080771]" name="afterSuite" is-config="true" duration-ms="1" started-at="2021-08-09T18:54:06 IST" finished-at="2021-08-09T18:54:06 IST">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="afterSuite" is-config="true" duration-ms="1" started-at="2021-08-27T15:15:42 IST" finished-at="2021-08-27T15:15:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- testSuite.Verity -->
+      </class> <!-- testSuite.Bolt -->
     </test> <!-- Test -->
   </suite> <!-- Regression -->
 </testng-results>

@@ -104,7 +104,6 @@ public class Verity extends TestInit {
 			// Clciking on AddNew
 			SeleniumTools.clickOnObject("xpath", "//button[text()='Add New']");
 			CoreUtil.imSleepy(20000);
-
 			// Clicking on SAVE
 			SeleniumTools.clickOnObject("xpath", "//span[text()=' Save']");
 			CoreUtil.imSleepy(10000);
@@ -765,30 +764,30 @@ public class Verity extends TestInit {
 			CoreUtil.imSleepy(10000);
 			SeleniumTools.switchToFrame("xpath", "//iframe[@id='frame-modal-clone-1']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='extended-iframe']");
-			// Click on Save
-			SeleniumTools.clickOnObject("xpath",
+			 /* // Click on Save
+			 SeleniumTools.clickOnObject("xpath",
 					"//button[@class='btn btn-success footer-btn save-button']/span[text()=' Save']");
-			CoreUtil.imSleepy(5000);
-			SeleniumTools.switchToDefaultFrame();
-			// close
-			SeleniumTools.clickOnObject("xpath", "//div[@id='modal-clone-1']//button[@class='close']/span");
+			 CoreUtil.imSleepy(5000);
+			 SeleniumTools.switchToDefaultFrame();
+			 // close
+			 SeleniumTools.clickOnObject("xpath", "//div[@id='modal-clone-1']//button[@class='close']/span");
 
-			SeleniumTools.switchToFrame("xpath", "//iframe[@id='mainFrame']");
-			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
-			// Clicking on Verification
-			SeleniumTools.clickOnObject("xpath",
+			 SeleniumTools.switchToFrame("xpath", "//iframe[@id='mainFrame']");
+			 SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
+			 // Clicking on Verification
+			 SeleniumTools.clickOnObject("xpath",
 					"//div[@class='tree-container k-widget k-treeview']//span[contains(text(),'Verifications')]");
-			CoreUtil.imSleepy(5000);
-			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='browserFrame']");
-			// Clicking on record
-			SeleniumTools.clickOnObject("xpath", "//div[@class='k-grid-content k-auto-scrollable']//table//tr[1]");
-			CoreUtil.imSleepy(5000);
-			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='FormFrame']");
-			// Delete
-			SeleniumTools.clickOnObject("xpath", "//span[text()=' Delete']");
-			// Confirm Delete
-			SeleniumTools.clickOnObject("xpath", "//echo-interrupt[@class='ng-isolate-scope']//a[text()='Delete']");
-			CoreUtil.imSleepy(2000);
+			 CoreUtil.imSleepy(5000);
+			 SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='browserFrame']");
+			 // Clicking on record
+			 SeleniumTools.clickOnObject("xpath", "//div[@class='k-grid-content k-auto-scrollable']//table//tr[1]");
+			 CoreUtil.imSleepy(5000);
+			 SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='FormFrame']");
+			 // Delete
+			 SeleniumTools.clickOnObject("xpath", "//span[text()=' Delete']");
+			 // Confirm Delete
+			 SeleniumTools.clickOnObject("xpath", "//echo-interrupt[@class='ng-isolate-scope']//a[text()='Delete']");
+			 CoreUtil.imSleepy(2000);  */
 
 		} catch (Exception e) {
 			e.printStackTrace();

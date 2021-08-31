@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Regression">
-              <span class="suite-name border-failed">Regression</span>
+              <span class="suite-name border-passed">Regression</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,31 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 3 failed,   6 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Regression" class="hide-methods failed suite-Regression"> (hide)</a> <!-- hide-methods failed suite-Regression -->
-                      <a href="#" panel-name="suite-Regression" class="show-methods failed suite-Regression"> (show)</a> <!-- show-methods failed suite-Regression -->
-                    </span>
-                    <div class="method-list-content failed suite-Regression">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testSuite.Verity" hash-for-method="Verity_SG_02">Verity_SG_02</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testSuite.Verity" hash-for-method="Verity_SG_08">Verity_SG_08</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testSuite.Verity" hash-for-method="Verity_SG_09">Verity_SG_09</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Regression -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -128,32 +104,17 @@
                     <div class="method-list-content passed suite-Regression">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testSuite.Verity" hash-for-method="Verity_SG_01">Verity_SG_01</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testSuite.Bolt" hash-for-method="Bolt_SG_02">Bolt_SG_02</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testSuite.Verity" hash-for-method="Verity_SG_03">Verity_SG_03</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testSuite.Bolt" hash-for-method="Bolt_SG_03">Bolt_SG_03</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testSuite.Verity" hash-for-method="Verity_SG_04">Verity_SG_04</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testSuite.Verity" hash-for-method="Verity_SG_05">Verity_SG_05</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testSuite.Verity" hash-for-method="Verity_SG_06">Verity_SG_06</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testSuite.Verity" hash-for-method="Verity_SG_07">Verity_SG_07</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testSuite.Bolt" hash-for-method="Bolt_SG_04">Bolt_SG_04</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression -->
@@ -168,114 +129,37 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression" class="panel Regression">
-          <div class="suite-Regression-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testSuite.Verity</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verity_SG_02">
-                  </a> <!-- Verity_SG_02 -->
-                  <span class="method-name">Verity_SG_02</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at testSuite.Verity.Verity_SG_02(Verity.java:275)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Forgot Password)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verity_SG_08">
-                  </a> <!-- Verity_SG_08 -->
-                  <span class="method-name">Verity_SG_08</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at testSuite.Verity.Verity_SG_08(Verity.java:707)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Set Up - System - Configuration - System Parameters - SaveSet Up - System - Configuration - System Parameters - Modify )                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verity_SG_09">
-                  </a> <!-- Verity_SG_09 -->
-                  <span class="method-name">Verity_SG_09</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at testSuite.Verity.Verity_SG_09(Verity.java:796)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verity / Provider / National Student Clearinghouse Query)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-failed -->
           <div class="suite-Regression-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testSuite.Verity</span>
+              <span class="class-name">testSuite.Bolt</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Verity_SG_01">
-                  </a> <!-- Verity_SG_01 -->
-                  <span class="method-name">Verity_SG_01</span>
+                  <a name="Bolt_SG_02">
+                  </a> <!-- Bolt_SG_02 -->
+                  <span class="method-name">Bolt_SG_02</span>
                   <em>
-(Provider - Add, Provider - Demographics - Modify, Provider - Demographics - Country - Add, Provider - Delete)                  </em>
+(Bolt - Go to Editor - Spreadsheet - Create then Upload Template File - Print)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Verity_SG_03">
-                  </a> <!-- Verity_SG_03 -->
-                  <span class="method-name">Verity_SG_03</span>
+                  <a name="Bolt_SG_03">
+                  </a> <!-- Bolt_SG_03 -->
+                  <span class="method-name">Bolt_SG_03</span>
                   <em>
-(Change from Global to Facility specific login)                  </em>
+(Bolt - Workflow - Batch Add - Many Records)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Verity_SG_04">
-                  </a> <!-- Verity_SG_04 -->
-                  <span class="method-name">Verity_SG_04</span>
+                  <a name="Bolt_SG_04">
+                  </a> <!-- Bolt_SG_04 -->
+                  <span class="method-name">Bolt_SG_04</span>
                   <em>
-(Account Management - Create a new user then login as that user )                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verity_SG_05">
-                  </a> <!-- Verity_SG_05 -->
-                  <span class="method-name">Verity_SG_05</span>
-                  <em>
-(Verity - Provider - Credentials/Licenses - VerifyNow!)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verity_SG_06">
-                  </a> <!-- Verity_SG_06 -->
-                  <span class="method-name">Verity_SG_06</span>
-                  <em>
-(Facility - Add)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verity_SG_07">
-                  </a> <!-- Verity_SG_07 -->
-                  <span class="method-name">Verity_SG_07</span>
-                  <em>
-(Facility - Change Facility - Save)                  </em>
+(Bolt Report - Query/Export of Facility data - My Reports - Print Bolt Report - ensure Notifications maintain Facility specificity)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -295,7 +179,13 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testSuite.Verity&quot;/&gt;
+      &lt;class name=&quot;testSuite.Bolt&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Bolt_SG_02&quot;/&gt;
+          &lt;include name=&quot;Bolt_SG_03&quot;/&gt;
+          &lt;include name=&quot;Bolt_SG_04&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testSuite.Bolt --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Regression --&gt;
@@ -335,48 +225,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Verity_SG_09')
-data.setCell(0, 2, 'testSuite.Verity')
-data.setCell(0, 3, 394834);
+data.setCell(0, 1, 'Bolt_SG_03')
+data.setCell(0, 2, 'testSuite.Bolt')
+data.setCell(0, 3, 590471);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Verity_SG_06')
-data.setCell(1, 2, 'testSuite.Verity')
-data.setCell(1, 3, 356221);
+data.setCell(1, 1, 'Bolt_SG_02')
+data.setCell(1, 2, 'testSuite.Bolt')
+data.setCell(1, 3, 300948);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Verity_SG_04')
-data.setCell(2, 2, 'testSuite.Verity')
-data.setCell(2, 3, 303329);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Verity_SG_01')
-data.setCell(3, 2, 'testSuite.Verity')
-data.setCell(3, 3, 287800);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Verity_SG_07')
-data.setCell(4, 2, 'testSuite.Verity')
-data.setCell(4, 3, 233628);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Verity_SG_05')
-data.setCell(5, 2, 'testSuite.Verity')
-data.setCell(5, 3, 202281);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Verity_SG_02')
-data.setCell(6, 2, 'testSuite.Verity')
-data.setCell(6, 3, 177612);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Verity_SG_03')
-data.setCell(7, 2, 'testSuite.Verity')
-data.setCell(7, 3, 132461);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Verity_SG_08')
-data.setCell(8, 2, 'testSuite.Verity')
-data.setCell(8, 3, 106990);
+data.setCell(2, 1, 'Bolt_SG_04')
+data.setCell(2, 2, 'testSuite.Bolt')
+data.setCell(2, 3, 300543);
 window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 minutes</span>
+              <span class="suite-total-time">Total running time: 19 minutes</span>
               <div id="times-div-Regression">
               </div> <!-- times-div-Regression -->
             </div> <!-- times-div -->
@@ -391,13 +257,45 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">17 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testSuite.Verity</span>
+              <span class="ignored-class-name">testSuite.Bolt</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">Verity_SG_10</span>
+                <span class="ignored-method-name">Bolt_SG_15</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_09</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_06</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_17</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_14</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_11</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_05</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_16</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_13</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_10</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_08</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_19</span>
+                <br/>
+                <span class="ignored-method-name">FindElements</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_07</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_18</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_12</span>
+                <br/>
+                <span class="ignored-method-name">Bolt_SG_01</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -409,180 +307,78 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testSuite.Verity</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testSuite.Bolt</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">beforeSuite(org.testng.TestRunner@197d6cc9)</span>
+                <span class="method-name">beforeSuite(org.testng.TestRunner@445f6f73)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">1997 ms</span>
+                <span class="method-start">219 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassRun</span>
-                <span class="method-start">2087 ms</span>
+                <span class="method-start">233 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void testSuite.Verity.Verity_SG_01())</span>
-                <span class="method-start">2129 ms</span>
+                <span class="method-name">beforeMethod(public static void testSuite.Bolt.Bolt_SG_02())</span>
+                <span class="method-start">245 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Verity_SG_01</span>
-                <span class="method-start">3012 ms</span>
+                <span class="method-name">Bolt_SG_02</span>
+                <span class="method-start">269 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=Verity_SG_01 status=SUCCESS method=Verity.Verity_SG_01()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">290819 ms</span>
+                <span class="method-name">getResult([TestResult name=Bolt_SG_02 status=SUCCESS method=Bolt.Bolt_SG_02()[pri:0, instance:testSuite.Bolt@2...)</span>
+                <span class="method-start">301217 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=Verity_SG_01 status=SUCCESS method=Verity.Verity_SG_01()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">294999 ms</span>
+                <span class="method-name">afterMethod([TestResult name=Bolt_SG_02 status=SUCCESS method=Bolt.Bolt_SG_02()[pri:0, instance:testSuite.Bolt@2...)</span>
+                <span class="method-start">302536 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void testSuite.Verity.Verity_SG_02())</span>
-                <span class="method-start">296550 ms</span>
+                <span class="method-name">beforeMethod(public static void testSuite.Bolt.Bolt_SG_03())</span>
+                <span class="method-start">303314 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Verity_SG_02</span>
-                <span class="method-start">296550 ms</span>
+                <span class="method-name">Bolt_SG_03</span>
+                <span class="method-start">303315 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=Verity_SG_02 status=FAILURE method=Verity.Verity_SG_02()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">474168 ms</span>
+                <span class="method-name">getResult([TestResult name=Bolt_SG_03 status=SUCCESS method=Bolt.Bolt_SG_03()[pri:0, instance:testSuite.Bolt@2...)</span>
+                <span class="method-start">893794 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=Verity_SG_02 status=FAILURE method=Verity.Verity_SG_02()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">474172 ms</span>
+                <span class="method-name">afterMethod([TestResult name=Bolt_SG_03 status=SUCCESS method=Bolt.Bolt_SG_03()[pri:0, instance:testSuite.Bolt@2...)</span>
+                <span class="method-start">895717 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public static void testSuite.Verity.Verity_SG_03())</span>
-                <span class="method-start">474747 ms</span>
+                <span class="method-name">beforeMethod(public static void testSuite.Bolt.Bolt_SG_04())</span>
+                <span class="method-start">895867 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Verity_SG_03</span>
-                <span class="method-start">474748 ms</span>
+                <span class="method-name">Bolt_SG_04</span>
+                <span class="method-start">895867 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=Verity_SG_03 status=SUCCESS method=Verity.Verity_SG_03()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">607210 ms</span>
+                <span class="method-name">getResult([TestResult name=Bolt_SG_04 status=SUCCESS method=Bolt.Bolt_SG_04()[pri:0, instance:testSuite.Bolt@2...)</span>
+                <span class="method-start">1196414 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=Verity_SG_03 status=SUCCESS method=Verity.Verity_SG_03()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">610266 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public static void testSuite.Verity.Verity_SG_04())</span>
-                <span class="method-start">610519 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Verity_SG_04</span>
-                <span class="method-start">610519 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=Verity_SG_04 status=SUCCESS method=Verity.Verity_SG_04()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">913850 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=Verity_SG_04 status=SUCCESS method=Verity.Verity_SG_04()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">916108 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public static void testSuite.Verity.Verity_SG_05())</span>
-                <span class="method-start">916294 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Verity_SG_05</span>
-                <span class="method-start">916295 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=Verity_SG_05 status=SUCCESS method=Verity.Verity_SG_05()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">1118577 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=Verity_SG_05 status=SUCCESS method=Verity.Verity_SG_05()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">1120777 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public static void testSuite.Verity.Verity_SG_06())</span>
-                <span class="method-start">1121061 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Verity_SG_06</span>
-                <span class="method-start">1121062 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=Verity_SG_06 status=SUCCESS method=Verity.Verity_SG_06()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">1477287 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=Verity_SG_06 status=SUCCESS method=Verity.Verity_SG_06()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">1478919 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public static void testSuite.Verity.Verity_SG_07())</span>
-                <span class="method-start">1479157 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Verity_SG_07</span>
-                <span class="method-start">1479166 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=Verity_SG_07 status=SUCCESS method=Verity.Verity_SG_07()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">1712796 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=Verity_SG_07 status=SUCCESS method=Verity.Verity_SG_07()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">1714361 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public static void testSuite.Verity.Verity_SG_08())</span>
-                <span class="method-start">1714542 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Verity_SG_08</span>
-                <span class="method-start">1714542 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=Verity_SG_08 status=FAILURE method=Verity.Verity_SG_08()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">1821533 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=Verity_SG_08 status=FAILURE method=Verity.Verity_SG_08()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">1821539 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public static void testSuite.Verity.Verity_SG_09())</span>
-                <span class="method-start">1821804 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Verity_SG_09</span>
-                <span class="method-start">1821805 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=Verity_SG_09 status=FAILURE method=Verity.Verity_SG_09()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">2216642 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=Verity_SG_09 status=FAILURE method=Verity.Verity_SG_09()[pri:0, instance:testSuite....)</span>
-                <span class="method-start">2216643 ms</span>
+                <span class="method-name">afterMethod([TestResult name=Bolt_SG_04 status=SUCCESS method=Bolt.Bolt_SG_04()[pri:0, instance:testSuite.Bolt@2...)</span>
+                <span class="method-start">1197569 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClassRun</span>
-                <span class="method-start">2216872 ms</span>
+                <span class="method-start">1197683 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">2216877 ms</span>
+                <span class="method-start">1197685 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">2217235 ms</span>
+                <span class="method-start">1197707 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

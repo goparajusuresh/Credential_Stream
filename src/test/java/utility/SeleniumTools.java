@@ -1468,6 +1468,7 @@ public class SeleniumTools extends TestInit {
 		navigator.click(element).sendKeys(Keys.END).keyDown(Keys.SHIFT).sendKeys(Keys.HOME).keyUp(Keys.SHIFT)
 				.sendKeys(Keys.BACK_SPACE).sendKeys(text).sendKeys(Keys.ENTER).perform();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		loggerUtil.LogMessage(LogLevel.INFO, "ClearAndSetText At : " + value, "Data filled and Entered: " + text);
 	}
 
 	public static String getRandomNumbers() {
