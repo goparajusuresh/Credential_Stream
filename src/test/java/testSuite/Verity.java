@@ -419,7 +419,7 @@ public class Verity extends TestInit {
 			SeleniumTools.clickOnObject("xpath", "//div[@class='k-grid-content k-auto-scrollable']/table/tbody/tr[1]");
 			CoreUtil.imSleepy(10000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='FormFrame']");
-			SeleniumTools.scrollToElementAndClick("xpath", "//select[@name='#psvMode']");
+			SeleniumTools.javascriptClick("//select[@name='#psvMode']");
 
 			// SeleniumTools.selectByText("xpath", "//select[@name='#psvMode']","Sanction");
 			// SeleniumTools.selectByText("xpath",
@@ -430,7 +430,7 @@ public class Verity extends TestInit {
 			SeleniumTools.verifyDropdown("xpath", "//select[@name='#psvMode']", "Normal");
 			SeleniumTools.verifyDropdown("xpath", "//select[@name='#psvMode']", "Expirable");
 			// Clicking on ************** Verify Now!************
-			SeleniumTools.clickOnObject("xpath", "//input[@name='VerifyNow']");
+			SeleniumTools.javascriptClick("//input[@name='VerifyNow']");
 			CoreUtil.imSleepy(10000);
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='frame-modal-clone-1']");

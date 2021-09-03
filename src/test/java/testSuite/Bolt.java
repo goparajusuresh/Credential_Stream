@@ -59,7 +59,7 @@ public class Bolt extends TestInit {
 				pNode.log(Status.FAIL, result.getThrowable());
 				pNode.log(Status.FAIL, "Snapshot below: " + pNode.addScreenCaptureFromPath(screenShotPath));
 			}
-			SeleniumTools.quitBrowser();
+			//SeleniumTools.quitBrowser();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -762,10 +762,10 @@ public class Bolt extends TestInit {
 			SeleniumTools.scrollToElementAndClick("xpath",
 					"//div[@id='navEntry']//div[text()='Bolt_Export_Facility_Data']");
 			SeleniumTools.switchToChildWindow();
-			CoreUtil.imSleepy(5000);
+			CoreUtil.imSleepy(8000);
 			//SeleniumTools.getText("xpath", "//span[@id='errorMsg']");
 			SeleniumTools.clickOnObject("xpath", "//a[text()='Click here to view the exported file']");
-			CoreUtil.imSleepy(5000);
+			CoreUtil.imSleepy(8000);
 
 			// Verifying downloaded file
 			File filelocation = new File("C:\\Users\\SureshGoparaju\\Downloads");
@@ -928,7 +928,7 @@ public class Bolt extends TestInit {
 			SeleniumTools.scrollToElementAndClick("xpath", "//input[@name='Image1']");
 			CoreUtil.imSleepy(5000);
 			Runtime.getRuntime().exec(System.getProperty("user.dir") + "/src/test/resources/AutIT Scite/Listings.exe");
-			CoreUtil.imSleepy(5000);
+			CoreUtil.imSleepy(8000);
 			// upload this file
 			SeleniumTools.scrollToElementAndClick("xpath", "//input[@name='uploadButton']");
 			CoreUtil.imSleepy(8000);
@@ -1029,7 +1029,7 @@ public class Bolt extends TestInit {
 	}
 
 	@Test(description = "Editor – Listings – Add New Listing - Add Table and Merge Variables")
-	public void Bolt_SG_06() {
+	public void Bolt_SG_06() { 
 		try {
 			Login.StageLogin(SeleniumTools.readConfigFile(Constants.properties_stage).getProperty("Stage_G_Username"),
 					SeleniumTools.readConfigFile(Constants.properties_stage).getProperty("Stage_G_Password"));
@@ -1090,7 +1090,7 @@ public class Bolt extends TestInit {
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='ReporterListingFrame']");
 			// Save
-			SeleniumTools.scrollToElementAndClick("xpath", "//img[@title='Save Changes']");
+			SeleniumTools.javascriptClick("//img[@title='Save Changes']");
 			CoreUtil.imSleepy(15000);
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
@@ -1131,7 +1131,7 @@ public class Bolt extends TestInit {
 					"First Name");
 			CoreUtil.imSleepy(20000);
 			/// Click on provider/physician
-			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='Provider/Physician                      ']");
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='libraryTree']//span[contains(text(),'Provider/Physician')]");
 			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='FirstName']");
 			// CopyTo Clipboard
 			SeleniumTools.clickOnObject("xpath", "//button[@ng-disabled='!VariableName']");
@@ -1164,7 +1164,7 @@ public class Bolt extends TestInit {
 					"MiddleName");
 			CoreUtil.imSleepy(20000);
 			/// Click on provider/physician
-			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='Provider/Physician                      ']");
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='libraryTree']//span[contains(text(),'Provider/Physician')]");
 			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='MiddleName']");
 			// CopyTo Clipboard
 			SeleniumTools.clickOnObject("xpath", "//button[@ng-disabled='!VariableName']");
@@ -1196,7 +1196,7 @@ public class Bolt extends TestInit {
 					"Last Name");
 			CoreUtil.imSleepy(20000);
 			/// Click on provider/physician
-			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='Provider/Physician                      ']");
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='libraryTree']//span[contains(text(),'Provider/Physician')]");
 			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='LastName']");
 			// CopyTo Clipboard
 			SeleniumTools.clickOnObject("xpath", "//button[@ng-disabled='!VariableName']");
@@ -1228,7 +1228,7 @@ public class Bolt extends TestInit {
 					"Gender");
 			CoreUtil.imSleepy(20000);
 			/// Click on provider/physician
-			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='Provider/Physician                      ']");
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='libraryTree']//span[contains(text(),'Provider/Physician')]");
 			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='Gender']");
 			// CopyTo Clipboard
 			SeleniumTools.clickOnObject("xpath", "//button[@ng-disabled='!VariableName']");
@@ -1260,7 +1260,7 @@ public class Bolt extends TestInit {
 					"Birthdate");
 			CoreUtil.imSleepy(20000);
 			/// Click on provider/physician
-			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='Provider/Physician                      ']");
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='libraryTree']//span[contains(text(),'Provider/Physician')]");
 			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='Birthdate']");
 			// CopyTo Clipboard
 			SeleniumTools.clickOnObject("xpath", "//button[@ng-disabled='!VariableName']");
@@ -1366,7 +1366,6 @@ public class Bolt extends TestInit {
 			SeleniumTools.scrollToElementAndClick("xpath", "//span[contains(text(),'" + Listing_title + "')]");
 			CoreUtil.imSleepy(10000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='ReporterListingFrame']");
-
 			// *** Delete listing
 			SeleniumTools.scrollToElementAndClick("xpath", "//img[@title='Delete Listing']");
 			SeleniumTools.getAlertText();
@@ -1434,7 +1433,7 @@ public class Bolt extends TestInit {
 			SeleniumTools.scrollToElementAndClick("xpath",
 					"//div[@id='PackagesTreeView']//span[text()='SeAutomation']");
 			SeleniumTools.clickOnObject("xpath", "//button[text()='Select Folder']");
-
+			CoreUtil.imSleepy(5000);
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Bolt']");
@@ -1442,7 +1441,7 @@ public class Bolt extends TestInit {
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='ReporterDataWizFrame']");
 
 			// Add Variables
-			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='variablesTab']//button[text()='Add Variable']");
+			SeleniumTools.javascriptClick("//div[@id='variablesTab']//button[text()='Add Variable']");
 			CoreUtil.imSleepy(10000);
 			SeleniumTools.switchToDefaultFrame();
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='MainModalFrame']");
@@ -1496,7 +1495,7 @@ public class Bolt extends TestInit {
 			// Clicking on Report
 			SeleniumTools.scrollToElementAndClick("xpath",
 					"//div[@id='navEntry']//echo-slat[@slat='notification']//div[text()='" + Spreadsheet_Title + "']");
-			CoreUtil.imSleepy(5000);
+			CoreUtil.imSleepy(8000);
 
 			// Verifying downloaded file
 			File filelocation = new File("C:\\Users\\SureshGoparaju\\Downloads");
@@ -1555,7 +1554,7 @@ public class Bolt extends TestInit {
 					"//a/span[text()='Spreadsheets']//ancestor::div[@id='ReporterWizard']/preceding-sibling::div//input[@class='rddtFilterInput radPreventDecorate rddtFilterEmptyMessage']",
 					Spreadsheet_Title);
 			SeleniumTools.scrollToElementAndClick("xpath", "//span[contains(text(),'" + Spreadsheet_Title + "')]");
-
+			CoreUtil.imSleepy(6000);
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='ReporterDataWizFrame']");
 
 			// Click on Delete
@@ -1607,7 +1606,7 @@ public class Bolt extends TestInit {
 			// Clicking on Report
 			SeleniumTools.scrollToElementAndClick("xpath",
 					"//div[@id='navEntry']//echo-slat[@slat='notification']//div[text()='Create - Spreadsheet']");
-			CoreUtil.imSleepy(5000);
+			CoreUtil.imSleepy(8000);
 
 			// Verifying downloaded file
 			for (File file : totalfiles) {
@@ -1970,7 +1969,7 @@ public class Bolt extends TestInit {
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='EditorFrame']");
 			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='ReporterOthersFrame']");
 			// Click on execute
-			SeleniumTools.scrollToElementAndClick("xpath", "//input[@name='UpdateButton']");
+			SeleniumTools.javascriptClick("//input[@name='UpdateButton']");
 			SeleniumTools.getAlertText();
 
 			// Verify Field
@@ -3023,29 +3022,250 @@ public class Bolt extends TestInit {
 		}
 	}
 
-	@Test(description = "List of findelements", enabled = false)
-	public void FindElements() {
+	@Test(description = "Bolt Report – select existing - with Query, Letter, Export - Save then Create Sample",enabled=false)
+	public void Bolt_SG_20() {
 		try {
+
 			// Login to the Stage Application
 			Login.StageLogin(SeleniumTools.readConfigFile(Constants.properties_stage).getProperty("Stage_G_Username"),
 					SeleniumTools.readConfigFile(Constants.properties_stage).getProperty("Stage_G_Password"));
 			// Verifying Global mode
 			Login.CheckMode("Verity QA Team1", "global");
-
-			// ************************ Navigate to provider***************************
-			SeleniumTools.hoverElement("xpath", "//li[@text='Search'] [@class='k-item k-state-default']");
-			SeleniumTools.clickOnObject("xpath", "//span[text()='Search']/ancestor::li//span[text()='Provider']");
+			// Clicking on Bolt
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
+			// Clicking on Editor
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Home']");
+			CoreUtil.imSleepy(10000);
+			// Clicking on print bolt report icon
+			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Home']");
+			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='ReporterPickersFrame']");
+			// Select Bolt Report
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='rapidreportTree']/span");
+			SeleniumTools.scrollToElementAndClick("xpath",
+					"//div[@id='rapidreportTree_EmbeddedTree']//span[text()='Add new...']");
 			CoreUtil.imSleepy(5000);
-			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Search']");
-			// Enter Value in search box
-			SeleniumTools.ClearAndSetTextEnter("xpath", "//input[@ng-model='query']", "John");
+
+			// Select Quries
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='filterTree']/span");
+			SeleniumTools.ClearAndSetText("xpath",
+					"//div[@id='filterTree_EmbeddedTree']/parent::div/parent::div//input[@value='Search...']",
+					"prov list Query");
+			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='prov list Query']");
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='filterTree']/span");
+			CoreUtil.imSleepy(2000);
+
+			// Select Forms/letters
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='letterTree']/span");
+			SeleniumTools.ClearAndSetText("xpath",
+					"//div[@id='letterTree_EmbeddedTree']/parent::div/parent::div//input[@value='Search...']",
+					"Print Forms/Letters");
+			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='Print Forms/Letters']");
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='letterTree']/span");
+			CoreUtil.imSleepy(2000);
+
+			// Select Exports
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='exportsTree']/span");
+			SeleniumTools.ClearAndSetText("xpath",
+					"//div[@id='exportsTree_EmbeddedTree']/parent::div/parent::div//input[@value='Search...']",
+					"Bolt_Export_Facility_Data");
+			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='Bolt_Export_Facility_Data']");
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='exportsTree']/span");
+			CoreUtil.imSleepy(2000);
+
+			SeleniumTools.switchToDefaultFrame();
+			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
+			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Home']");
+			// Click on SAVE
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@class='col-xs-6']//button[text()=' Save']");
+
+			CoreUtil.imSleepy(5000);
+			// Enter Title
+			SeleniumTools.ClearAndSetText("xpath", "//input[@ng-model='modal.reportTitle']",
+					SeleniumTools.getRandomString());
+			// Select Folder
+			SeleniumTools.scrollToElementAndClick("xpath", "//button[@class='btn btn-default silver']");
+			SeleniumTools.switchToDefaultFrame();
+			SeleniumTools.waitForFrameToBeAvailable("id", "MainModalFrame");
+			SeleniumTools.scrollToElementAndClick("xpath",
+					"//div[@id='PackagesTreeView']//span[text()='SeAutomation']");
+			SeleniumTools.scrollToElementAndClick("xpath", "//button[text()='Select Folder']");
+			CoreUtil.imSleepy(5000);
+			SeleniumTools.switchToDefaultFrame();
+			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
+			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Home']");
+			// Save
+			SeleniumTools.scrollToElementAndClick("xpath", "//a[text()='Save']");
+			CoreUtil.imSleepy(10000);
+
+			// Letter Create sample
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[text()='Print Forms/Letters']/parent::div/parent::div//button[@title='Create sample']");
+			//Open Sample
+			//SeleniumTools.scrollToElementAndClick("xpath", "//div[text()='Print Forms/Letters']/parent::div/parent::div//button[@title='Open sample']");
+			 RTFReader.RTF("note.doc", " ");
+			
+			// Export Create sample
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[text()='Bolt_Export_Facility_Data']/parent::div/parent::div//button[@title='Create sample']");
+			SeleniumTools.switchToChildWindow();
+			CoreUtil.imSleepy(5000);
+			//SeleniumTools.getText("xpath", "//span[@id='errorMsg']");
+			SeleniumTools.clickOnObject("xpath", "//a[text()='Click here to view the exported file']");
 			CoreUtil.imSleepy(5000);
 
-			List<WebElement> rows = driver.findElements(By.className("ng-binding ng-scope"));
-			for (int i = 0; i <= rows.size() - 1; i++) {
-				System.out.print("\t" + rows.get(i).getText());
-				System.out.println();
+			// Verifying downloaded file
+			File filelocation = new File("C:\\Users\\SureshGoparaju\\Downloads");
+			File[] totalfiles = filelocation.listFiles();
+
+			for (File file : totalfiles) {
+				if (file.getName().contains("efd")) {
+					System.out.println("File is downloaded.");
+					// file.delete();
+					break;
+				}
 			}
+			// Validating Facility1 should be display, Facility2 should not be display
+			NotepadReader.verifyNotepadText("efd.txt", " ", "abc");
+			SeleniumTools.closeTab();
+			SeleniumTools.switchToDefaultWindow();
+			SeleniumTools.switchToFrame("id", "mainFrame");
+			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Home']");
+			// *** Delete Record
+			// Click on More
+			CoreUtil.imSleepy(5000);
+			SeleniumTools.scrollToElementAndClick("xpath", "//button[text()='More  ']");
+			// Click on Delete report
+			SeleniumTools.scrollToElementAndClick("xpath", "//a[text()=' Delete Report']");
+			CoreUtil.imSleepy(5000);
+			// Confirm Delete
+			SeleniumTools.scrollToElementAndClick("xpath",
+					"//echo-interrupt[@modal='interruptModel']//a[text()='Delete']");
+			CoreUtil.imSleepy(5000);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			pNode.fail(e);
+			Assert.fail();
+		} finally {
+			loggerUtil.exitLogger(new Object() {
+			}.getClass().getEnclosingMethod().getName());
+		}
+	}
+	@Test(description = "Bolt Report – select existing - with Query, Letter, Listing - Save then Preview", enabled=false)
+	public void Bolt_SG_21() {
+		try {
+
+			// Login to the Stage Application
+			Login.StageLogin(SeleniumTools.readConfigFile(Constants.properties_stage).getProperty("Stage_G_Username"),
+					SeleniumTools.readConfigFile(Constants.properties_stage).getProperty("Stage_G_Password"));
+			// Verifying Global mode
+			Login.CheckMode("Verity QA Team1", "global");
+			// Clicking on Bolt
+			SeleniumTools.hoverElement("xpath", "//li[@text='Bolt']");
+			// Clicking on Editor
+			SeleniumTools.clickOnObject("xpath", "//ul[@role='menu']//span[text()='Home']");
+			CoreUtil.imSleepy(10000);
+			// Clicking on print bolt report icon
+			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Home']");
+			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@id='ReporterPickersFrame']");
+			// Select Bolt Report
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='rapidreportTree']/span");
+			SeleniumTools.scrollToElementAndClick("xpath",
+					"//div[@id='rapidreportTree_EmbeddedTree']//span[text()='Add new...']");
+			CoreUtil.imSleepy(5000);
+
+			// Select Quries
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='filterTree']/span");
+			SeleniumTools.ClearAndSetText("xpath",
+					"//div[@id='filterTree_EmbeddedTree']/parent::div/parent::div//input[@value='Search...']",
+					"prov list Query");
+			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='prov list Query']");
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='filterTree']/span");
+			CoreUtil.imSleepy(2000);
+
+			// Select Forms/letters
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='letterTree']/span");
+			SeleniumTools.ClearAndSetText("xpath",
+					"//div[@id='letterTree_EmbeddedTree']/parent::div/parent::div//input[@value='Search...']",
+					"Print Forms/Letters");
+			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='Print Forms/Letters']");
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='letterTree']/span");
+			CoreUtil.imSleepy(2000);
+
+			// Select Listings
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='listingTree']/span");
+			SeleniumTools.ClearAndSetText("xpath",
+					"//div[@id='exportsTree_EmbeddedTree']/parent::div/parent::div//input[@value='Search...']",
+					"Bolt_Export_Facility_Data");
+			SeleniumTools.scrollToElementAndClick("xpath", "//span[text()='Bolt_Export_Facility_Data']");
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@id='listingTree']/span");
+			CoreUtil.imSleepy(2000);
+
+			SeleniumTools.switchToDefaultFrame();
+			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
+			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Home']");
+			// Click on SAVE
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[@class='col-xs-6']//button[text()=' Save']");
+
+			CoreUtil.imSleepy(5000);
+			// Enter Title
+			SeleniumTools.ClearAndSetText("xpath", "//input[@ng-model='modal.reportTitle']",
+					SeleniumTools.getRandomString());
+			// Select Folder
+			SeleniumTools.scrollToElementAndClick("xpath", "//button[@class='btn btn-default silver']");
+			SeleniumTools.switchToDefaultFrame();
+			SeleniumTools.waitForFrameToBeAvailable("id", "MainModalFrame");
+			SeleniumTools.scrollToElementAndClick("xpath",
+					"//div[@id='PackagesTreeView']//span[text()='SeAutomation']");
+			SeleniumTools.scrollToElementAndClick("xpath", "//button[text()='Select Folder']");
+			CoreUtil.imSleepy(5000);
+			SeleniumTools.switchToDefaultFrame();
+			SeleniumTools.waitForFrameToBeAvailable("id", "mainFrame");
+			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Home']");
+			// Save
+			SeleniumTools.scrollToElementAndClick("xpath", "//a[text()='Save']");
+			CoreUtil.imSleepy(10000);
+
+			// Letter Create sample
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[text()='Print Forms/Letters']/parent::div/parent::div//button[@title='Create sample']");
+			//Open Sample
+			//SeleniumTools.scrollToElementAndClick("xpath", "//div[text()='Print Forms/Letters']/parent::div/parent::div//button[@title='Open sample']");
+			 RTFReader.RTF("note.doc", " ");
+			
+			// Export Create sample
+			SeleniumTools.scrollToElementAndClick("xpath", "//div[text()='Bolt_Export_Facility_Data']/parent::div/parent::div//button[@title='Create sample']");
+			SeleniumTools.switchToChildWindow();
+			CoreUtil.imSleepy(5000);
+			//SeleniumTools.getText("xpath", "//span[@id='errorMsg']");
+			SeleniumTools.clickOnObject("xpath", "//a[text()='Click here to view the exported file']");
+			CoreUtil.imSleepy(5000);
+
+			// Verifying downloaded file
+			File filelocation = new File("C:\\Users\\SureshGoparaju\\Downloads");
+			File[] totalfiles = filelocation.listFiles();
+
+			for (File file : totalfiles) {
+				if (file.getName().contains("efd")) {
+					System.out.println("File is downloaded.");
+					// file.delete();
+					break;
+				}
+			}
+			// Validating Facility1 should be display, Facility2 should not be display
+			NotepadReader.verifyNotepadText("efd.txt", " ", "abc");
+			SeleniumTools.closeTab();
+			SeleniumTools.switchToDefaultWindow();
+			SeleniumTools.switchToFrame("id", "mainFrame");
+			SeleniumTools.waitForFrameToBeAvailable("xpath", "//iframe[@name='Home']");
+			// *** Delete Record
+			// Click on More
+			CoreUtil.imSleepy(5000);
+			SeleniumTools.scrollToElementAndClick("xpath", "//button[text()='More  ']");
+			// Click on Delete report
+			SeleniumTools.scrollToElementAndClick("xpath", "//a[text()=' Delete Report']");
+			CoreUtil.imSleepy(5000);
+			// Confirm Delete
+			SeleniumTools.scrollToElementAndClick("xpath",
+					"//echo-interrupt[@modal='interruptModel']//a[text()='Delete']");
+			CoreUtil.imSleepy(5000);
 
 		} catch (Exception e) {
 			e.printStackTrace();

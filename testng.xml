@@ -7,7 +7,8 @@
 	<test name="Test">
 		<classes>
 			<class name="testSuite.Verity">
-				
+			
+
 			</class>
 		</classes>
 	</test> <!-- Test -->

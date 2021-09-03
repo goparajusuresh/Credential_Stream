@@ -237,6 +237,7 @@ public class SeleniumTools extends TestInit {
 			if (elementUI != null && elementUI.isEnabled() && elementUI.isDisplayed()) {
 				Actions actions = new Actions(driver);
 				actions.moveToElement(elementUI).click().build().perform();
+				pNode.info("scrollToElementAndClick At : " + value);
 				loggerUtil.LogMessage(LogLevel.INFO, "scrollToElementAndClick At : ", value);
 			} else {
 				loggerUtil.LogMessage(LogLevel.WARN, "scrollToElementAndClick At", "Element " + value + " not found");
@@ -1624,6 +1625,7 @@ public class SeleniumTools extends TestInit {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", element1);
 		loggerUtil.LogMessage(LogLevel.INFO, "javascriptClick", "method" + xpath + " Clicked");
+		pNode.info("javascriptClick At: " + xpath);
 	}
 	// clicking on three dots
 		public static void setupActions(String value) {

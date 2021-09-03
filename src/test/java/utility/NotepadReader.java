@@ -22,19 +22,21 @@ public class NotepadReader {
 		FileReader FR = new FileReader(path);
 		BufferedReader BR = new BufferedReader(FR);
 		//Runtime rs = Runtime.getRuntime();
-		
+		int count=0,lines = 0;
 		String readline, value;
 		try {
 			//rs.exec(path);
 			// Loop to read all lines one by one from file and print It.
 			while ((readline = BR.readLine()) != null) {
 				value = readline;
+				count++;
 				System.out.println(value);
 				Assert.assertTrue(value.toString().contains(text1));
 				System.out.println("The given text " + text1 + " is Found in the File");
 				Assert.assertFalse(value.toString().contains(text2));
 				System.out.println(text2 + " is not found in the file");
 			}
+			System.out.println("Number of records: "+count);			
 			BR.close();
 			//rs.exit(0);
 			Files.deleteIfExists(Paths.get(path));
