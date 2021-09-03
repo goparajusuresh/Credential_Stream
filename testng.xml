@@ -7,10 +7,7 @@
 	<test name="Test">
 		<classes>
 			<class name="testSuite.Verity">
-				<methods>
-					<include name="Verity_SG_03" />
-				</methods>
-
+				
 			</class>
 		</classes>
 	</test> <!-- Test -->
