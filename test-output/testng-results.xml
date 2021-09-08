@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="20" total="21" passed="1">
+<testng-results skipped="0" failed="0" ignored="21" total="22" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression" duration-ms="881081" started-at="2021-09-03T16:02:35 IST" finished-at="2021-09-03T16:17:16 IST">
+  <suite name="Regression" duration-ms="57845" started-at="2021-09-08T20:03:33 IST" finished-at="2021-09-08T20:04:31 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="881081" started-at="2021-09-03T16:02:35 IST" finished-at="2021-09-03T16:17:16 IST">
+    <test name="Test" duration-ms="57845" started-at="2021-09-08T20:03:33 IST" finished-at="2021-09-08T20:04:31 IST">
       <class name="testSuite.Bolt">
-        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="beforeSuite" is-config="true" duration-ms="343" started-at="2021-09-03T16:02:34 IST" finished-at="2021-09-03T16:02:35 IST">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="beforeSuite" is-config="true" duration-ms="198" started-at="2021-09-08T20:03:33 IST" finished-at="2021-09-08T20:03:33 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3fe8ad3f]]>
+                <![CDATA[org.testng.TestRunner@563a89b5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="beforeTest" is-config="true" duration-ms="0" started-at="2021-09-03T16:02:35 IST" finished-at="2021-09-03T16:02:35 IST">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="beforeTest" is-config="true" duration-ms="0" started-at="2021-09-08T20:03:33 IST" finished-at="2021-09-08T20:03:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClassRun()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="beforeClassRun" is-config="true" duration-ms="0" started-at="2021-09-03T16:02:35 IST" finished-at="2021-09-03T16:02:35 IST">
+        <test-method status="PASS" signature="beforeClassRun()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="beforeClassRun" is-config="true" duration-ms="0" started-at="2021-09-08T20:03:33 IST" finished-at="2021-09-08T20:03:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassRun -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="beforeMethod" is-config="true" duration-ms="30" started-at="2021-09-03T16:02:35 IST" finished-at="2021-09-03T16:02:35 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="beforeMethod" is-config="true" duration-ms="13" started-at="2021-09-08T20:03:33 IST" finished-at="2021-09-08T20:03:33 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testSuite.Bolt.Bolt_SG_06()]]>
+                <![CDATA[public void testSuite.Bolt.Reports()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Bolt_SG_06()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="Bolt_SG_06" duration-ms="879930" started-at="2021-09-03T16:02:35 IST" description="Editor – Listings – Add New Listing - Add Table and Merge Variables" finished-at="2021-09-03T16:17:15 IST">
+        <test-method status="PASS" signature="Reports()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="Reports" duration-ms="56483" started-at="2021-09-08T20:03:33 IST" description="Reports" finished-at="2021-09-08T20:04:30 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Bolt_SG_06 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="getResult" is-config="true" duration-ms="5" started-at="2021-09-03T16:17:15 IST" finished-at="2021-09-03T16:17:15 IST">
+        </test-method> <!-- Reports -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="afterMethod" is-config="true" duration-ms="1262" started-at="2021-09-08T20:04:30 IST" finished-at="2021-09-08T20:04:31 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Bolt_SG_06 status=SUCCESS method=Bolt.Bolt_SG_06()[pri:0, instance:testSuite.Bolt@2bfc268b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="afterMethod" is-config="true" duration-ms="1017" started-at="2021-09-03T16:17:15 IST" finished-at="2021-09-03T16:17:16 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Bolt_SG_06 status=SUCCESS method=Bolt.Bolt_SG_06()[pri:0, instance:testSuite.Bolt@2bfc268b] output={null}]]]>
+                <![CDATA[[TestResult name=Reports status=SUCCESS method=Bolt.Reports()[pri:0, instance:testSuite.Bolt@2bfc268b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClassRun()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="afterClassRun" is-config="true" duration-ms="0" started-at="2021-09-03T16:17:16 IST" finished-at="2021-09-03T16:17:16 IST">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testSuite.Bolt@2bfc268b]" name="getResult" is-config="true" duration-ms="0" started-at="2021-09-08T20:04:30 IST" finished-at="2021-09-08T20:04:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Reports status=SUCCESS method=Bolt.Reports()[pri:0, instance:testSuite.Bolt@2bfc268b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="afterClassRun()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="afterClassRun" is-config="true" duration-ms="0" started-at="2021-09-08T20:04:31 IST" finished-at="2021-09-08T20:04:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClassRun -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-09-03T16:17:16 IST" finished-at="2021-09-03T16:17:16 IST">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="afterTest" is-config="true" duration-ms="1" started-at="2021-09-08T20:04:31 IST" finished-at="2021-09-08T20:04:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="afterSuite" is-config="true" duration-ms="0" started-at="2021-09-03T16:17:16 IST" finished-at="2021-09-03T16:17:16 IST">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testSuite.Bolt@2bfc268b]" name="afterSuite" is-config="true" duration-ms="0" started-at="2021-09-08T20:04:31 IST" finished-at="2021-09-08T20:04:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

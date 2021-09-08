@@ -6,20 +6,20 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testSuite.Verity">
+      <class name="testSuite.Bolt">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="getResult"/>
-          <include name="Verity_SG_02"/>
+          <include name="Reports"/>
           <include name="beforeClassRun"/>
           <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="afterClassRun"/>
           <include name="beforeTest"/>
+          <include name="getResult"/>
           <include name="afterMethod"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- testSuite.Verity -->
+      </class> <!-- testSuite.Bolt -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Regression] -->
